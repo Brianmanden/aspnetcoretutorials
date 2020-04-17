@@ -25,7 +25,8 @@ namespace RazorPagesMovie.Models
                         Title = "Superman III",
                         ReleaseDate = DateTime.Parse("1989-5-17"),
                         Genre = "SciFi / Fantasy",
-                        Price = 6.99M
+                        Price = 6.99M,
+                        Rating = "G"
                     },
 
                     new Movie
@@ -33,7 +34,8 @@ namespace RazorPagesMovie.Models
                         Title = "Ghostbusters 2",
                         ReleaseDate = DateTime.Parse("1986-2-23"),
                         Genre = "Comedy",
-                        Price = 9.99M
+                        Price = 9.99M,
+                        Rating = "PG"
                     },
 
                     new Movie
@@ -41,7 +43,8 @@ namespace RazorPagesMovie.Models
                         Title = "Rio Bravo",
                         ReleaseDate = DateTime.Parse("1959-4-15"),
                         Genre = "Western",
-                        Price = 3.99M
+                        Price = 3.99M,
+                        Rating = "R"
                     }
                 );
                 context.SaveChanges();
