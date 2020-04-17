@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>jQuery.Validation.Globalize</id>
+    <version>1.1.0</version>
+    <authors>John Reilly</authors>
+    <owners>John Reilly</owners>
+    <licenseUrl>http://opensource.org/licenses/mit-license.php</licenseUrl>
+    <projectUrl>https://github.com/johnnyreilly/jquery-validation-globalize</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>An extension to the jQuery Validation Plugin which makes it use Globalize for number and date parsing (enabling simple internationalized validation).</description>
+    <releaseNotes>Updated to Globalize 1.0 or above.</releaseNotes>
+    <copyright>Copyright © 2015 John Reilly</copyright>
+    <tags>jQuery Validation globalize internationalization localization cultures languages locales i18n number date parse</tags>
+    <dependencies>
+      <dependency id="jQuery.Validation" version="1.14.0" />
+      <dependency id="jquery-globalize" version="1.0.0" />
+    </dependencies>
+  </metadata>
+</package>

@@ -10,6 +10,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using RazorPagesMovie.Data;
+using System.Globalization;
+using Microsoft.AspNetCore.Localization;
 
 namespace RazorPagesMovie
 {
@@ -56,6 +58,15 @@ namespace RazorPagesMovie
             {
                 endpoints.MapRazorPages();
             });
+
+            var defaultCulture = new CultureInfo("da-DK");
+            var localizationOptions = new RequestLocalizationOptions
+            {
+                DefaultRequestCulture = new RequestCulture(defaultCulture),
+                SupportedCultures = new List<CultureInfo> { defaultCulture },
+                SupportedUICultures = new List<CultureInfo> { defaultCulture }
+            };
+            app.UseRequestLocalization(localizationOptions);
         }
     }
 }
