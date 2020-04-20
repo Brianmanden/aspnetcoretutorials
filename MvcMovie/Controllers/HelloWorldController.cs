@@ -1,27 +1,19 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Text.Encodings.Web;
 
 namespace MvcMovie.Controllers
 {
     public class HelloWorldController : Controller
     {
-        public string Index()
+        public IActionResult Index()
         {
-            return "This is my default action...";
+            return View();
         }
 
-        public string Welcome(string name, int numTimes = 1) {
-            //return "This is the Welcome action method...";
-            //var output = "";
+        public IActionResult Welcome(string name, int numTimes = 1) {
+            ViewData["Message"] = "Hello " + name;
+            ViewData["NumTimes"] = numTimes;
 
-            //for (int i = 1; i <= numTimes; i++)
-            //{
-            //    output += $"Hello {name} - progress: {i} of {numTimes}";
-            //}
-
-            return HtmlEncoder.Default.Encode( $"Hello {name}: numTimes is {numTimes}");
-            //return HtmlEncoder.Default.Encode(output);
+            return View();
         }
     }
 }
