@@ -20,6 +20,7 @@ namespace MvcMovie.Models
                 context.Movie.AddRange(
                     new Movie {
                         Title = "Superman III",
+                        Rating = "R",
                         ReleaseDate = DateTime.Parse("1989-6-17"),
                         Genre = "Action",
                         Price = 9.99M
@@ -27,6 +28,7 @@ namespace MvcMovie.Models
                     new Movie
                     {
                         Title = "Rio Bravo 2",
+                        Rating = "PG",
                         ReleaseDate = DateTime.Parse("1957-4-15"),
                         Genre = "Western",
                         Price = 4.99M
@@ -34,6 +36,7 @@ namespace MvcMovie.Models
                     new Movie
                     {
                         Title = "Mythbusters The Movie",
+                        Rating = "R",
                         ReleaseDate = DateTime.Parse("2005-1-1"),
                         Genre = "Science",
                         Price = 11.21M
@@ -41,6 +44,7 @@ namespace MvcMovie.Models
                     new Movie
                     {
                         Title = "Rio Bravo",
+                        Rating = "PG",
                         ReleaseDate = DateTime.Parse("1954-4-15"),
                         Genre = "Western",
                         Price = 3.99M
