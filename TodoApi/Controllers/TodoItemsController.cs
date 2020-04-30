@@ -60,7 +60,7 @@ namespace TodoApi.Controllers
             }
 
             todoItem.Name = todoItemDTO.Name;
-            todoItemDTO.IsComplete = todoItemDTO.IsComplete;
+            todoItem.IsComplete = todoItemDTO.IsComplete;
 
             try
             {
